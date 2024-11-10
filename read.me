@@ -1,0 +1,47 @@
+# setting up the environment
+
+1. sudo apt install python3.11-venv
+2. python3 -m venv myenv
+3. source myenv/bin/activate
+4. pip install scrapy
+
+# add a .gitignore file to stop backing up files from myenv to github
+
+# start a new project by
+
+1. scrapy startproject proj_name_here
+
+# it creates,
+
+proj_name_here/
+    scrapy.cfg            # deploy configuration file
+
+    proj_name_here/             # project's Python module, you'll import your code from here
+        __init__.py
+
+        items.py          # project items definition file
+
+        middlewares.py    # project middlewares file
+
+        pipelines.py      # project pipelines file
+
+        settings.py       # project settings file
+
+        spiders/          # a directory where you'll later put your spiders
+            __init__.py
+
+# move to the created folder
+
+1. cd proj_name_here
+
+# write the code in proj_name_here/proj_name_here/spiders by creating a python file
+
+# run the spider by 
+
+1. scrapy crawl name_here
+
+        proj_name_here/proj_name_here/spiders/your_python_file.py
+        class QuotesSpider(scrapy.Spider):
+            name = "name_here"
+
+
