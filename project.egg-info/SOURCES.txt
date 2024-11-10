@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+yts_data_crawler/__init__.py
+yts_data_crawler/items.py
+yts_data_crawler/middlewares.py
+yts_data_crawler/pipelines.py
+yts_data_crawler/settings.py
+yts_data_crawler/spiders/__init__.py
+yts_data_crawler/spiders/yts_data_crawler.py
